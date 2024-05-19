@@ -29,10 +29,10 @@ export default function FAQ() {
     <>
       <div className="mx-3 md:mx-5 lg:mx-7 xl:mx-9 border max-h-fit">
         <div className="mt-12 md:mt-14 lg:mt-16 xl:mt-20">
-          <div className="text-center font-[Mulish] text-[#181423] font-bold text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
+          <div className="text-center font-f1 text-[#181423] font-bold text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
             Frequently Asked Questions
           </div>
-          <div className="text-center text-[#4D4D4D] mt-2 md:mt-3 lg:mt-4 xl:mt-5 text-xs md:text-sm lg:text-base xl:text-lg ">
+          <div className="text-center font-f1 text-[#4D4D4D] mt-2 md:mt-3 lg:mt-4 xl:mt-5 text-xs md:text-sm lg:text-base xl:text-lg ">
             (FAQ’s)
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function FAQ() {
                     className="inline-flex items-center justify-between text-gray-900 w-full text-left"
                     onClick={() => toggleAccordion(index)}
                   >
-                    <p className="text-[#023020] font-bold text-xs md:text-base lg:text-lg xl:text-xl ">
+                    <p className="text-[#023020] font-f1 font-bold text-xs md:text-base lg:text-lg xl:text-xl ">
                       {faq.question}
                     </p>
                     <VButton />
@@ -61,7 +61,7 @@ export default function FAQ() {
                       transition: "max-height 0.3s ease-in-out",
                     }}
                   >
-                    <div className="text-[#4D4D4D] leading-5 md:leading-6 lg:leading-6 xl:leading-7  text-[0.63rem] md:text-xs lg:text-sm xl:text-base  ">
+                    <div className="text-[#4D4D4D] leading-5 md:leading-6 lg:leading-6 xl:leading-7 font-f1 text-[0.63rem] md:text-xs lg:text-sm xl:text-base  ">
                       {faq.answer}
                     </div>
                   </div>

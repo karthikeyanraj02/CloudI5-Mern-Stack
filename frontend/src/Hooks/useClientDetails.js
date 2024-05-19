@@ -52,7 +52,7 @@ export default function useClientRegister() {
   return { loading, register };
 }
 
-function inputErrorHandler({
+export function inputErrorHandler({
   name,
   mobileNumber,
   email,
@@ -75,6 +75,12 @@ function inputErrorHandler({
     toast.error("Please fill all fields");
     return false;
   }
+  let emailRegex = /@gmail.com$/;
+  if (!email.match(emailRegex)) {
+    toast.error("please enter valid email");
+    return false;
+  }
+
   if (isNaN(mobileNumber)) {
     toast.error("Please enter valid mobile.no");
     return false;

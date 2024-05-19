@@ -4,7 +4,7 @@ export default function CircleTick() {
   return (
     <div>
       <svg
-        class=" w-4 h-4  md:w-5 md:h-5  lg:w-6 lg:h-6  xl:w-6.5 xl:h-6.5 2xl:w-10 2xl:10"
+        class=" w-2.5 h-4  md:w-3 md:h-5  lg:w-3 lg:h-6  xl:w-4 xl:h-7 "
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

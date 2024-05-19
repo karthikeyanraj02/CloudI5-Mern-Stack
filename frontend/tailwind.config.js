@@ -3,8 +3,8 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontSize: {
-        op: "0.75rem",
+      fontFamily: {
+        f1: "Mulish",
       },
     },
   },

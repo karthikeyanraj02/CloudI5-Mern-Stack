@@ -20,60 +20,98 @@ export default function Home() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-[#023020] opacity-50"></div>
-        <div className="absolute top-[45px] left-[55px]">
-          <img
-            src={logo}
-            alt="Logo"
-            className="w-[52px] h-[22px] sm:w-[62px] sm:h-[32px] md:w-[82px] md:h-[42px] lg:w-[102px] lg:h-[52px] xl:w-[122px] xl:h-[62px] 2xl:w-[142px] 2xl:h-[72px]"
-          />
-        </div>
-        <div className="absolute inset-0 flex justify-center items-center">
-          <div className="w-full max-w-[744.75px]">
-            <div className="w-full max-w-[744.75px] md:max-w-[800px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] mx-auto px-6 sm:px-8 md:px-12 lg:px-20 xl:px-24 2xl:px-32">
-              <div className="w-full max-w-[744.75px]">
+        <div className="absolute inset-0  pt-0.5 md:pt-1 lg:pt-2 xl:pt-4 ">
+          <div className="  h-2">
+            <div className="  ml-4 md:ml-7 lg:ml-10 xl:ml-14 ">
+              <img
+                src={logo}
+                alt="Logo"
+                className="  w-24 h-14 md:w-28 md:h-16 lg:w-32 lg:h-20 xl:w-40 xl:h-24"
+              />
+            </div>
+            <div className="flex justify-center">
+              <div className="  h-96 mt-14 md:mt-24 lg:w-3/5">
+                <div className="  text-center font-bold font-f1 text-white text-xl md:text-2xl lg:text-4xl xl:text-5xl">
+                  Crafting Digital Experiences,
+                  <br />
+                  <div className="mt-1 md:mt-2 lg:mt-3 ">
+                    {" "}
+                    One Pixel at a Time.
+                  </div>
+                </div>
                 <div className="flex justify-center">
-                  <div className="font-[Mulish] font-extrabold text-3xl sm:text-2xl md:text-3xl lg:text-4xl text-white leading-tight text-center">
-                    Crafting Digital Experiences,
-                    <div className="mt-4 sm:mt-6"> One Pixel at a Time.</div>
+                  <div className=" mt-10 md:mt-12 lg:mt-8 xl:mt-10 h-96">
+                    <div className="flex flex-col md:flex md:justify-center sm:block lg:hidden">
+                      <div className="flex justify-center">
+                        <div className="">
+                          <Tick />
+                        </div>
+                        <div className="text-base text-white font-f1 ml-1 md:ml-2 -mt-1 md:text-lg">
+                          Innovation
+                        </div>
+                      </div>
+                      <div className="flex justify-center  -mt-3 ml-10 md:ml-11">
+                        <div className="">
+                          <Tick />
+                        </div>
+                        <div className="text-base text-white font-f1 ml-1 md:ml-2 -mt-1 md:text-lg">
+                          Online Presence
+                        </div>
+                      </div>{" "}
+                      <div className="flex justify-center -mt-3 -ml-4 md:-ml-4 ">
+                        <div className="">
+                          <Tick />
+                        </div>
+                        <div className="text-base text-white font-f1 ml-1 md:ml-2 -mt-1 md:text-lg">
+                          Creative
+                        </div>
+                      </div>
+                      <div className=" mt-6 md:mt-7  text-center">
+                        <button
+                          onClick={scrollToRegister}
+                          className="text-white  rounded font-f1 p-1 px-3 md:p-1 md:px-4 text-xs md:text-sm   border-[#D7AC14] bg-[#D7AC14] hover:bg-[#d5b951]"
+                        >
+                          Register Now
+                        </button>
+                      </div>
+                    </div>
+                    <div className="hidden lg:block ">
+                      <div className="flex justify-between lg:gap-x-3 xl:gap-x-5 ">
+                        <div className="flex justify-center  ">
+                          <div className="">
+                            <Tick />
+                          </div>
+                          <div className="text-base xl:text-lg font-f1 text-white ml-1">
+                            Innovation
+                          </div>
+                        </div>{" "}
+                        <div className="flex justify-center    ">
+                          <div className="">
+                            <Tick />
+                          </div>
+                          <div className="text-base xl:text-lg font-f1 text-white ml-1 ">
+                            Online Presence
+                          </div>
+                        </div>{" "}
+                        <div className="flex justify-center    ">
+                          <div className="">
+                            <Tick />
+                          </div>
+                          <div className="text-base xl:text-lg font-f1 text-white ml-1 ">
+                            Creative
+                          </div>
+                        </div>
+                      </div>
+                      <div className="  mt-14 xl:mt-20  text-center">
+                        <button
+                          onClick={scrollToRegister}
+                          className="text-white font-f1 p-2 px-8 xl:p-2 xl:px-10 text-sm xl:text-base border border-[#D7AC14] bg-[#D7AC14] rounded-lg hover:bg-[#d5b951]"
+                        >
+                          Register Now
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div className="flex justify-center">
-                <div className="w-full max-w-fit h-auto mt-8 sm:mt-12 flex">
-                  <div className="flex justify-start w-fit">
-                    <div>
-                      <Tick />
-                    </div>
-                    <div className="-mt-1 ml-2 text-white font-[Mulish] font-normal text-lg ">
-                      Innovation
-                    </div>
-                  </div>
-                  <div className="flex justify-center w-fit ml-3">
-                    <div>
-                      <Tick />
-                    </div>
-                    <div className="-mt-1 ml-2 text-white font-[Mulish] font-normal text-lg ">
-                      Online Presence
-                    </div>
-                  </div>
-                  <div className="flex justify-end w-fit ml-3">
-                    <div>
-                      <Tick />
-                    </div>
-                    <div className="-mt-1 ml-2 text-white font-[Mulish] font-normal text-lg ">
-                      Creative
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-center mt-8 sm:mt-12">
-                  <button
-                    onClick={scrollToRegister}
-                    className="text-white text-lg font-[Mulish] p-2 px-5 border border-[#D7AC14] bg-[#D7AC14] rounded-lg hover:bg-[#b89413] "
-                  >
-                    Register Now
-                  </button>
                 </div>
               </div>
             </div>
@@ -83,13 +121,13 @@ export default function Home() {
       <div className="bg-[#F9F9F9]   mx-3 md:mx-5 lg:mx-7 xl:mx-9 max-h-fit">
         <div className="   mx-4 p-5 md:mx-6 lg:mx-10 xl:mx-12">
           <div className="   mt-8 md:mt-10 lg:mt-12 xl:mt-16 2xl:mt-20 ">
-            <div className="text-lg text-[Mulish] text-[#006743] font-semibold md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
-              <span className="text-black">Our Approach:</span> “Collaborative,
+            <div className="text-lg font-f1 text-[#006743] font-bold md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
+              <span className="text-black ">Our Approach:</span> “Collaborative,
               Creative, Custom” ?
             </div>
           </div>
           <div className="mt-5 md:mt-5 lg:mt-6 xl:mt-7 2xl:mt-10">
-            <p className=" text-[#4D4D4D] font-[Mulish] leading-loose text-wrap text-xs md:text-sm md:leading-loose lg:text-base lg:leading-[2rem] xl:text-lg xl:leading-[3rem] 2xl:text-xl 2xl:leading-[3.5rem] ">
+            <p className=" text-[#4D4D4D] font-f1 leading-loose text-wrap text-xs md:text-sm md:leading-loose lg:text-base lg:leading-[2rem] xl:text-lg xl:leading-[3rem] 2xl:text-xl 2xl:leading-[3.5rem] ">
               We take a collaborative approach to every project, working closely
               with you to understand your goals, your audience, and your unique
               selling points. From there, our team of designers and developers
