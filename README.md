@@ -12,7 +12,7 @@ We can do submit client details, and update FAQ's Question
 5. i deployed database in mongodb cluster,if you want to see data, i give my mongodb login credentials, or else you can add your local mongodb connection string in .env file DB_URI="--------------------"    
 
 ## Usage
-1. It's a Dynamic website, with responsive design,we can enter client details and update FAQ's
+1. It's a Dynamic website, with responsive design,we can enter client details and get the FAQ's data from backend
 
    
 ## Technologies Used
